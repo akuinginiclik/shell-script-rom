@@ -12,5 +12,4 @@ export KBUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 source build/envsetup.sh
 lunch miku_earth-userdebug-UNOFFICIAL
-make installclean
 make diva
