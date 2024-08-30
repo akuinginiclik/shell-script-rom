@@ -49,14 +49,14 @@ echo "===================================="
 
 # Clone local_manifests repository
 stm "*_\=\=\=\=\=\= Crave Build Running \=\=\=\=\=_*%0A**>*Date: _$(date "+%A, %d %B %Y")_*%0A>*Time: _$(date "+%H:%M:%S %Z")_*%0A>*ROM: _$(echo $romcuy)_*%0A>*Device: _$(echo $dcdnm)_*||%0A*_\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=_*%0A**>*\=\=\=\=\=\=\=\= Progress \=\=\=\=\=\=\=\=%0A>▣ Script Executed%0A>▣ Removing Stuffs%0A>◈ Clone local\_manifests%0A>▢ Initializing Repo%0A>▢ Syncing Repositories%0A>▢ Adding Exports%0A>▢ Setup Build Environment%0A>▢ Building ROM \| Done*||%0A*_\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=_*%0A>_Log Will Send After Build Finished_%0A%0A*_Script By @ZxhCarkecor_*%0A*_Don't Forget to [Donate](https://saweria.co/zxhcarkecor)_*" "$id_owner" > /dev/null
-git clone $(echo $lmfests) -b $(echo $blmfests) .repo/local_manifests
+git clone https://github.com/XeroMz69/manifest-lokal.git -b miku .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests done"
 echo "===================================="
 
 # Initialize repo
 stm "*_\=\=\=\=\=\= Crave Build Running \=\=\=\=\=_*%0A**>*Date: _$(date "+%A, %d %B %Y")_*%0A>*Time: _$(date "+%H:%M:%S %Z")_*%0A>*ROM: _$(echo $romcuy)_*%0A>*Device: _$(echo $dcdnm)_*||%0A*_\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=_*%0A**>*\=\=\=\=\=\=\=\= Progress \=\=\=\=\=\=\=\=%0A>▣ Script Executed%0A>▣ Removing Stuffs%0A>▣ Clone local\_manifests%0A>◈ Initializing Repo%0A>▢ Syncing Repositories%0A>▢ Adding Exports%0A>▢ Setup Build Environment%0A>▢ Building ROM \| Done*||%0A*_\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=_*%0A>_Log Will Send After Build Finished_%0A%0A*_Script By @ZxhCarkecor_*%0A*_Don't Forget to [Donate](https://saweria.co/zxhcarkecor)_*" "$id_owner" > /dev/null
-repo init -u $(echo $admfests) -b $(echo $badmfests) --git-lfs
+repo init -u https://github.com/Miku-UI/manifesto -b Udon_v2
 echo "===================================="
 echo "Initializing repo done"
 echo "===================================="
