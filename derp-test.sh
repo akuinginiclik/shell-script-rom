@@ -4,9 +4,11 @@ repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --depth=1
 # Sync the repositories
 /opt/crave/resync.sh  && 
 # Set up build environment
-export BUILD_USERNAME=Xero 
+export BUILD_USERNAME=XeroMz69 
  export BUILD_HOSTNAME=crave 
  source build/envsetup.sh && 
+echo Repository: XeroMz69/crave_aosp_builder
+ echo Run ID: 10640067250
  
 # Build the ROM
 lunch derp_earth-user && make installclean && mka derp
