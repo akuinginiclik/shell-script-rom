@@ -1,6 +1,7 @@
 #!/bin/bash
 rm -rf .repo/local_manifests/
 rm -rf device/lineage/sepolicy
+rm -rf vendor/lineage
 git clone https://github.com/XeroMz69/manifest-lokal.git -b ngising .repo/local_manifests
 rm -rf vendor/gms
 rm -rf .repo/projects/vendor/gms.git
