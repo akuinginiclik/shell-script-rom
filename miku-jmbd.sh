@@ -1,9 +1,10 @@
 #!/bin/bash
 rm -rf .repo/
+rm -rf frameworks/base
 rm -rf device/lineage/sepolicy
 rm -rf vendor/lineage
-git clone https://github.com/XeroMz69/manifest-lokal.git -b miku .repo/local_manifests
 repo init -u https://github.com/Miku-UI/manifesto -b Udon_v2
+git clone https://github.com/XeroMz69/manifest-lokal.git -b miku .repo/local_manifests
 /opt/crave/resync.sh
 export BUILD_USERNAME=Xero
 export BUILD_HOSTNAME=crave
