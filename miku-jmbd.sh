@@ -1,5 +1,6 @@
 #!/bin/bash
 rm -rf .repo/local_manifests/
+rm -rf .repo/*
 rm -rf device/lineage/sepolicy
 rm -rf vendor/lineage
 git clone https://github.com/XeroMz69/manifest-lokal.git -b miku .repo/local_manifests
