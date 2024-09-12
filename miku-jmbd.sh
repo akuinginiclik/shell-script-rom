@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf .repo/
+rm -rf .repo/local_manifests
 rm -rf frameworks/base
 rm -rf device/lineage/sepolicy
 rm -rf vendor/lineage
