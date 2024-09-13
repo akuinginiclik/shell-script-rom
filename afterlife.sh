@@ -15,5 +15,3 @@ export TZ=Asia/Jakarta
 source build/envsetup.sh
 . build/envsetup.sh
 goafterlife earth
-make installclean
-make diva
