@@ -6,6 +6,7 @@ rm -rf vendor/lineage
 repo init -u https://github.com/Miku-UI/manifesto -b Udon_v2
 git clone https://github.com/XeroMz69/manifest-lokal.git -b miku .repo/local_manifests
 /opt/crave/resync.sh
+export TARGET_RELEASE=ap2a
 export BUILD_USERNAME=Xero
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
