@@ -28,7 +28,6 @@ export TZ=Asia/Jakarta
 
 # Set up the build environment
 source build/envsetup.sh
-. build/envsetup.sh
 
 # Try the first lunch option
 if lunch miku_earth-UNOFFICIAL-userdebug; then
