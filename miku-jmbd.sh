@@ -5,6 +5,8 @@ rm -rf .repo/local_manifests
 rm -rf frameworks/base
 rm -rf device/lineage/sepolicy
 rm -rf vendor/lineage
+rm -rf packages/overlays/Lineage
+rm -rf packages/apps/Launcher3
 
 # Initialize repo
 repo init -u https://github.com/Miku-UI/manifesto -b Udon_v2
