@@ -10,7 +10,7 @@ rm -rf packages/apps/Launcher3
 
 # Initialize repo
 repo init -u https://github.com/Miku-UI/manifesto -b Udon_v2
-git clone https://github.com/Miku-UI/platform_frameworks_base -b Udon_v2 frameworks/base
+git clone https://github.com/Miku-UI/platform_frameworks_base -b Udon_v2 frameworks/base --depth=1
 git clone https://github.com/XeroMz69/manifest-lokal.git -b miku .repo/local_manifests
 
 # Sync repos
