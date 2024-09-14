@@ -28,16 +28,16 @@ source build/envsetup.sh
 . build/envsetup.sh
 
 # Try the first lunch option
-if lunch miku_earth-userdebug; then
-    echo "Successfully set lunch to miku_earth-userdebug"
+if lunch miku_earth-UNOFFICIAL-userdebug; then
+    echo "Successfully set lunch to miku_earth-UNOFFICIAL-userdebug"
     
 # Try the second lunch option if the first one fails
-elif lunch miku_earth-ap2a-UNOFFICIAL; then
-    echo "First lunch failed, successfully set lunch to miku_earth-ap2a-UNOFFICIAL"
+elif lunch miku_earth-UNOFFICIAL-ap2a; then
+    echo "First lunch failed, successfully set lunch to miku_earth-UNOFFICIAL-ap2a"
     
 # Try the third lunch option if the first two fail
-elif lunch miku_earth-ap2a; then
-    echo "First two lunch options failed, successfully set lunch to miku_earth-ap2a"
+elif lunch miku_earth-ap2a-userdebug; then
+    echo "First two lunch options failed, successfully set lunch to miku_earth-ap2a-userdebug"
     
 # If all lunch options fail, exit with an error
 else
