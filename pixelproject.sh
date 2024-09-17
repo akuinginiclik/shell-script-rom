@@ -14,6 +14,6 @@ export KBUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 source build/envsetup.sh
 . build/envsetup.sh
-lunch aosp_earth-userdebug
+lunch aosp_earth-ap2a-userdebug
 make installclean
 make bacon -j$(nproc --all)
