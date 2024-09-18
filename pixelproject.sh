@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf .repo/local_manifests
 rm -rf frameworks/base
-rm -rf device/lineage/sepolicy device/mediatek/sepolicy_vndr hardware/xiaomi
+rm -rf device/lineage/sepolicy device/mediatek/sepolicy_vndr hardware/mediatek hardware/xiaomi
 rm -rf vendor/lineage
 repo init -u https://github.com/The-Pixel-Project/manifest -b fourteen-qpr3 -g default,-mips,-darwin,-notdefault --git-lfs
 git clone https://github.com/XeroMz69/manifest-lokal.git -b pixelproject .repo/local_manifests
