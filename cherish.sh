@@ -14,6 +14,4 @@ export KBUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 source build/envsetup.sh
 . build/envsetup.sh
-lunch lineage_earth-userdebug
-make installclean
 brunch earth
