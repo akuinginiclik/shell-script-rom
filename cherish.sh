@@ -2,8 +2,6 @@
 rm -rf .repo/local_manifests
 rm -rf frameworks/base
 rm -rf device/lineage/sepolicy
-rm -rf hardware/xiaomi
-rm -rf vendor/lineage
 repo init -u https://github.com/CherishOS/android_manifest.git -b uqpr2
 git clone https://github.com/XeroMz69/manifest-lokal.git -b cherish .repo/local_manifests
 /opt/crave/resync.sh
