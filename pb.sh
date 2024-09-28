@@ -16,7 +16,6 @@ git clone https://github.com/XeroMz69/manifest-lokal.git -b projectblaze .repo/l
 /opt/crave/resync.sh
 
 # Export environment variables
-export TARGET_RELEASE=ap3a
 export BUILD_USERNAME=Xero
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
@@ -26,7 +25,20 @@ export TZ=Asia/Jakarta
 
 # Set up the build environment
 source build/envsetup.sh
-lunch blaze_earth-ap3a-userdebug
+
+# Try the first lunch option
+if lunch blaze_earth-ap3a-userdebug; then
+    echo "Successfully set lunch to blaze_earth-ap3a-userdebug"
+    
+# Try the second lunch option if the first one fails
+elif lunch blaze_earth-ap2a-userdebug; then
+    echo "First lunch failed, successfully set lunch to blaze_earth-ap2a-userdebug"
+        
+# If all lunch options fail, exit with an error
+else
+    echo "All lunch options failed!"
+    exit 1
+fi
 
 # Clean and build
 make installclean
