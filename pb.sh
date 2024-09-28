@@ -9,7 +9,7 @@ rm -rf device/mediatek/sepolicy_vndr
 rm -rf vendor/lineage
 
 # Initialize repo
-repo init -u https://github.com/ProjectBlaze/manifest -b 15 --git-lfs
+repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14
 git clone https://github.com/XeroMz69/manifest-lokal.git -b projectblaze .repo/local_manifests
 
 # Sync repos
