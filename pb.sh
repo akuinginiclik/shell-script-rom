@@ -10,7 +10,7 @@ rm -rf vendor/lineage
 
 # Initialize repo
 repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14
-git clone https://github.com/XeroMz69/manifest-lokal.git -b projectblaze .repo/local_manifests
+git clone https://github.com/XeroMz69/manifest-lokal.git -b pb-a14 .repo/local_manifests
 
 # Sync repos
 /opt/crave/resync.sh
