@@ -10,6 +10,9 @@ rm -rf vendor/xiaomi/earth
 rm -rf hardware/xiaomi
 rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
+rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+rm -rf prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9
+rm -rf prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
 echo "==============removing previous tree done=========="
 # Initialize repo
 repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
@@ -31,6 +34,9 @@ git clone https://github.com/yaap/hardware_xiaomi.git --depth 1 -b fourteen hard
 # prebuilts
 git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf.git --depth 1 -b 14.0.0 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_arm_arm-eabi.git --depth 1 -b 12.0.0 prebuilts/gcc/linux-x86/arm/arm-eabi
+git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9.git --depth 1 -b lineage-19.1 prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9.git --depth 1 -b lineage-19.1 prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9
+git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9.git --depth 1 -b lineage-19.1 prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
 # source modification
 git clone https://github.com/DerpFest-AOSP/frameworks_base.git --depth 1 -b 14 frameworks/base
 # set build environment
