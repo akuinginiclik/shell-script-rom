@@ -4,14 +4,11 @@
 rm -rf .repo/local_manifests/
 rm -rf device/lineage/sepolicy
 rm -rf vendor/lineage
-rm -rf vendor/gms
-rm -rf .repo/projects/vendor/gms.git
-rm -rf .repo/project-objects/*/android_vendor_gms.git
 rm -rf hardware/mediatek
 rm -rf device/mediatek/sepolicy_vndr
 
 # Clone the repo
-git clone https://github.com/XeroMz69/manifest-lokal.git -b ngising .repo/local_manifests
+git clone https://github.com/XeroMz69/manifest-lokal.git -b mist .repo/local_manifests
 repo init -u https://github.com/Project-Mist-OS/manifest -b qpr3 --git-lfs
 
 # Syncing the repo
