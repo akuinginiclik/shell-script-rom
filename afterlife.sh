@@ -6,7 +6,7 @@ rm -rf vendor/lineage
 repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
 git clone https://github.com/XeroMz69/manifest-lokal.git -b afterlife .repo/local_manifests
 /opt/crave/resync.sh
-rm -rf hardware/qcom hardware/qcom-caf vendor/qcom
+# rm -rf hardware/qcom hardware/qcom-caf vendor/qcom
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export KBUILD_USERNAME=Xero
 export KBUILD_HOSTNAME=crave
