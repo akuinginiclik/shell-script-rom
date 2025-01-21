@@ -6,6 +6,7 @@ git clone https://github.com/XeroMz69/manifest-lokal.git -b derpfest .repo/local
 /opt/crave/resync.sh
 rm -rf vendor/xiaomi
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git vendor/xiaomi/earth --depth 1
+git clone https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b prebuilts/prebuilts/clang/host/linux-x86/clang-los --depth 1
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export KBUILD_USERNAME=xero
 export KBUILD_HOSTNAME=crave
