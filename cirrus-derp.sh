@@ -9,7 +9,7 @@ if [ -d "$HOME/platform-tools" ] ; then
     PATH="$HOME/platform-tools:$PATH"
 fi" >> .profile
 source ~/.profile
-curl https://raw.githubusercontent.com/akhilnarang/scripts/refs/heads/master/setup/android_build_env.sh | bash
+curl https://raw.githubusercontent.com/XeroMz69/shell-script-rom/refs/heads/main/cirrus.sh | bash
 mkdir -p ~/bin
 mkdir -p ~/derp
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
