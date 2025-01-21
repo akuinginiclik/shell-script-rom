@@ -13,8 +13,8 @@ git clone https://github.com/XeroMz69/manifest-lokal.git -b derpfest .repo/local
 
 # Some fixes
 rm -rf vendor/xiaomi
-git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git vendor/xiaomi/earth --depth 1
-git clone https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b prebuilts/prebuilts/clang/host/linux-x86/clang-los --depth 1
+git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git $WORKDIR/vendor/xiaomi/earth --depth 1
+git clone https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los --depth 1
 
 # Some flags
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
