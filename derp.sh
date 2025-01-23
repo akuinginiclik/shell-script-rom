@@ -19,9 +19,9 @@ git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git $WOR
 rm -rf $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los
 mkdir -p $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los
 sudo apt install aria2 -y
-aria2c -s16 -x16 -k1M $CLANG_DLINK -o Clang.tar.gz
-tar -C $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los/ -zxvf Clang.tar.gz
-rm -rf Clang.tar.gz
+wget $CLANG_DLINK
+tar -C $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los/ -zxvf Xero-Clang-20.0.0git-20250113.tar.gz
+rm -rf Xero-Clang-20.0.0git-20250113.tar.gz
 
 # Some flags
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
