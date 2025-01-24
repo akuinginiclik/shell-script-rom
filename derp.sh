@@ -10,6 +10,7 @@ rm -rf device/lineage/sepolicy
 # Syncing the DerpFest repo
 repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15
 git clone https://github.com/XeroMz69/manifest-lokal.git -b derpfest .repo/local_manifests
+rm -rf $WORKDIR/packages/apps/FMRadio
 /opt/crave/resync.sh
 
 # Some fixes
@@ -20,8 +21,10 @@ rm -rf $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los
 mkdir -p $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los
 sudo apt install aria2 -y
 wget $CLANG_DLINK
-tar -C $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los/ -zxvf Xero-Clang-20.0.0git-20250113.tar.gz
+tar -C $WORKDIR/prebuilts/clang/host/linux-x86/clang-los/ -zxvf Xero-Clang-20.0.0git-20250113.tar.gz
 rm -rf Xero-Clang-20.0.0git-20250113.tar.gz
+rm -rf $WORKDIR/packages/apps/FMRadio
+git clone https://github.com/LineageOS/android_packages_apps_FMRadio.git $WORKDIR/packages/apps/FMRadio
 
 # Some flags
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
