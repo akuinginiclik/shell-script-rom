@@ -27,7 +27,9 @@ git clone https://github.com/LineageOS/android_packages_apps_FMRadio.git $WORKDI
 
 # Some flags
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+export BUILD_USERNAME=xero
 export KBUILD_USERNAME=xero
+export BUILD_HOSTNAME=crave
 export KBUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 
