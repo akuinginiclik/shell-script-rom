@@ -17,7 +17,7 @@ rm -rf $WORKDIR/packages/apps/FMRadio
 rm -rf $WORKDIR/vendor/xiaomi
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git $WORKDIR/vendor/xiaomi/earth --depth 1
 rm -rf frameworks/base
-git clone https://github.com/XeroMz69/frameworks_base.git $WORKDIR/frameworks/base --depth 1
+git clone https://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@github.com/XeroMz69/afl_frameworks_base.git $WORKDIR/frameworks/base --depth 1
 # git clone https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los --depth 1
 rm -rf $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los
 mkdir -p $WORKDIR/prebuilts/prebuilts/clang/host/linux-x86/clang-los
