@@ -29,9 +29,9 @@ sudo apt install git-lfs
 mkdir -p derp
 cd derp
 git lfs install
-repo init -q --no-repo-verify --depth=1 -u https://github.com/DerpFest-AOSP/manifest.git -b 15 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 -u https://github.com/XeroMz69/android_manifest.git -b 14 --git-lfs
 git-lfs install
-git clone https://github.com/XeroMz69/manifest-lokal.git -b derpfest .repo/local_manifests
+git clone https://github.com/XeroMz69/manifest-lokal.git -b afterlife .repo/local_manifests
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 rm -rf vendor/xiaomi
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git $WORKDIR/vendor/xiaomi/earth --depth 1
