@@ -16,10 +16,10 @@ git clone https://github.com/XeroMz69/manifest-lokal.git -b afterlife .repo/loca
 # Some fixes
 rm -rf $WORKDIR/vendor/xiaomi
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git $WORKDIR/vendor/xiaomi/earth --depth 1
-cd $WORKDIR/kernel/xiaomi/earth
-rm -rf KernelSU-Next
-rm -rf drivers/kernelsu
-curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+# cd $WORKDIR/kernel/xiaomi/earth
+# rm -rf KernelSU-Next
+# rm -rf drivers/kernelsu
+# curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
 cd $WORKDIR
 # rm -rf frameworks/base
 # git clone https://github.com/XeroMz69/afl_frameworks_base.git $WORKDIR/frameworks/base --depth 1
