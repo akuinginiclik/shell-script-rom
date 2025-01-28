@@ -1,0 +1,41 @@
+name: AOSP
+
+on:
+  # push:
+  #   branches:
+  #     - clang/*
+  # schedule:
+  #   - cron: '15 1 * * *'
+  workflow_dispatch:
+
+env:
+  GITLAB_NAME: ${{ secrets.GITLAB_NAME }}
+  GITLAB_SECRET: ${{ secrets.GITLAB_SECRET }}
+  BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+  GIT_SECRET: ${{ secrets.GIT_SECRET }}
+  GIT_SECRET_MAIN: ${{ secrets.GIT_SECRET_MAIN }}
+
+jobs:
+  build:
+
+    strategy:
+
+      fail-fast: false
+
+    name: Afterlife-${{ matrix.config.jobs }}
+    
+    runs-on: ubuntu-latest
+
+    container: 
+      image: cimg/deploy:2025.01
+
+    steps:
+
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          path: clang-${{ matrix.config.jobs }}
+
+      - name: Build ROM
+        run: |
+          ./circle-after.sh
