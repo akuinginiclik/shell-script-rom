@@ -9,10 +9,14 @@ cd scripts
 cd $workdir
 git config --global user.name "XeroMz69"
 git config --global user.email "adamyd18@gmail.com"
+sudo fallocate -l 32G /swapfile
+sudo mkswap /swapfile
+sudo chmod 600 /swapfile
+sudo swapon /swapfile
 mkdir -p ccache
 
 export CCACHE_DIR=$workdir/ccache
-ccache -M 100G
+ccache -M 50G
 free -h
 df -h
 
