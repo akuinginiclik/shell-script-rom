@@ -12,7 +12,7 @@ git config --global user.email "adamyd18@gmail.com"
 mkdir -p ccache
 
 export CCACHE_DIR=$workdir/ccache
-ccache -M 50G
+ccache -M 100G
 df -h
 
 # sync
@@ -29,7 +29,8 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 rm -rf vendor/xiaomi
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git vendor/xiaomi/earth --depth 1
 git clone https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b prebuilts/clang/host/linux-x86/clang-xero --depth 1
-      
+cd build/soong && git fetch https://github.com/masemoel/build_soong_legion-r 11 && git cherry-pick b45c5ae22f74f1bdbb9bfbdd06ecf7a25033c78b && git cherry-pick e020f2130224fbdbec1f83e3adfd06a9764cca87 && cd ../..
+
 #  Build_script:
 echo "build"
 export BUILD_USERNAME="xero"
