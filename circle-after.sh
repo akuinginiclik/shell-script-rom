@@ -12,6 +12,7 @@ git config --global user.email "adamyd18@gmail.com"
 mkdir -p ccache
 
 export CCACHE_DIR=$workdir/ccache
+ccache -M 50G
 df -h
 
 # sync
