@@ -46,3 +46,8 @@ export TZ=Asia/Jakarta
 # Afterlife
 make installclean
 goafterlife earth
+
+mkdir -p $WORKDIR/out
+mv out/target/product/earth/*.zip $WORKDIR/out
+mv out/target/product/earth/*.zip.sha256sum $WORKDIR/out
+mv out/target/product/earth/boot.img $WORKDIR/out
