@@ -5,9 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    container: 
-      image: cimg/deploy:2025.01
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     steps:
