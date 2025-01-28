@@ -13,6 +13,7 @@ mkdir -p ccache
 
 export CCACHE_DIR=$workdir/ccache
 ccache -M 100G
+free -h
 df -h
 
 # sync
