@@ -38,5 +38,4 @@ export KBUILD_BUILD_HOST="urmom"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export TZ=Asia/Jakarta
 . build/envsetup.sh
-lunch derp_earth-userdebug
-mka derp
+goafterlife earth 
