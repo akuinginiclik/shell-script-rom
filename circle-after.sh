@@ -12,15 +12,7 @@ git config --global user.email "adamyd18@gmail.com"
 mkdir -p ccache
 
 export CCACHE_DIR=$workdir/ccache
-sleep 1m
-
-while :
-do
-ccache -s
-echo ''
-top -b -i -n 1
-sleep 5s
-done
+df -h
 
 # sync
 echo "Sync Repo"
